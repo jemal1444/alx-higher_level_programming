@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Defines a class Square"""
+
 
 class Square:
     """
@@ -30,6 +32,15 @@ class Square:
 
     @size.setter
     def size(self, value):
+        """Property setter for size.
+
+        Args:
+            value (int): size of a square (1 side).
+
+        Raises:
+            TypeError: size must be an integer
+            ValueError: size must be >= 0
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
