@@ -1,7 +1,15 @@
 #!/usr/bin/python3
+"""Defines a class MagicClass"""
 import math
 
+
 class MagicClass:
+    """
+    Class that defines properties of MagicClass.
+
+    Attributes:
+        radius: radius.
+    """
     def __init__(self, radius=0):
         """Creates new instances of MagicClass.
 
